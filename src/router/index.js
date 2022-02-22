@@ -1,5 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
+import ProductsIndex from "../views/ProductsIndex.vue";
+import ProductsNew from "../views/ProductsNew.vue";
+import ProductsShow from "../views/ProductsShow.vue";
+import ProductsEdit from "../views/ProductsEdit.vue";
 
 const routes = [
   {
@@ -15,6 +22,13 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  { path: "/signup", name: "Signup", component: Signup },
+  { path: "/login", name: "Login", component: Login },
+  { path: "/logout", name: "Logout", component: Logout },
+  { path: "/products", name: "Products-index", component: ProductsIndex },
+  { path: "/products/new", name: "products-new", component: ProductsNew },
+  { path: "/products/:id", name: "products-show", component: ProductsShow },
+  { path: "/products/:id/edit", name: "products-edit", component: ProductsEdit },
 ];
 
 const router = createRouter({
