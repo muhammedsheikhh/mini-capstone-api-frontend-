@@ -29,7 +29,7 @@ export default {
 <template>
   <div class="products-new">
     <h1>New Product</h1>
-    <form v-on:submit.prevent="submit()">
+    <form v-on:submit.prevent="createProduct()">
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
@@ -45,6 +45,9 @@ export default {
       <br />
       Description:
       <input type="text" v-model="newProductParams.description" />
+      <br />
+      Supplier_id:
+      <input type="text" v-model="newProductParams.supplier_id" />
       <br />
       <input type="submit" value="Create" />
     </form>
