@@ -25,60 +25,46 @@ export default {
 </script>
 
 <template class="middle">
-  <div class="signup">
-    <form v-on:submit.prevent="submit()">
-      <h1>Signup</h1>
-      <ul>
-        <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
-      </ul>
-      <div>
-        <label>Name:</label>
-        <input class="form-control" type="text" v-model="newUserParams.name" />
-        <small>{{ 50 - newUserParams.name.length }}</small>
+  <div class="login">
+    <div class="d-flex justify-content-center h-100">
+      <div class="card">
+        <div class="card-header">
+          <h3>Signup</h3>
+        </div>
+        <div class="card-body">
+          <form v-on:submit.prevent="submit()">
+            <div class="paddin input-group form-group">
+              <input type="text" class="form-control" placeholder="username" v-model="newUserParams.name" />
+              <small>{{ 50 - newUserParams.name.length }}</small>
+            </div>
+            <div class="paddin input-group form-group">
+              <input type="text" class="form-control" placeholder="email" v-model="newUserParams.email" />
+            </div>
+            <div class="paddin input-group form-group">
+              <input type="text" class="form-control" placeholder="password" v-model="newUserParams.password" />
+              <small class="text-danger" v-if="newUserParams.password.length > 0 && newUserParams.password.length < 6">
+                Must be atleast 6 chracters
+              </small>
+            </div>
+            <div class="paddin input-group form-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="password confirmation"
+                v-model="newUserParams.password_confirmation"
+              />
+            </div>
+
+            <div class="paddin">
+              <input type="submit" value="Signup" class="login_btn" />
+            </div>
+          </form>
+        </div>
+        <div class="card-footer"></div>
       </div>
-      <div>
-        <label>Email:</label>
-        <input class="form-control" type="email" v-model="newUserParams.email" />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input class="form-control" type="password" v-model="newUserParams.password" />
-        <small class="text-danger" v-if="newUserParams.password.length > 0 && newUserParams.password.length < 6">
-          Must be atleast 6 chracters
-        </small>
-      </div>
-      <div>
-        <label>Password confirmation:</label>
-        <input class="form-control" type="password" v-model="newUserParams.password_confirmation" />
-      </div>
-      <input class="b2" type="submit" value="Submit" />
-    </form>
+    </div>
+    <ul>
+      <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+    </ul>
   </div>
-
-  <footer id="footer">
-    <p>
-      Luxurious Dealership
-      <br />
-      205 Lorem ipsum, Abcde, IL
-      <br />
-      Phone: (800) 000-0000 Fax: (812) 000-0000
-    </p>
-    <p>© Copyright 2022 Luxurious Dealership</p>
-  </footer>
 </template>
-<style>
-.signup {
-  text-align: left;
-  margin-left: 10rem;
-  margin-right: 50%;
-  margin-bottom: 12%;
-}
-
-.b2 {
-  margin-top: 2%;
-}
-
-.middle {
-  text-align: center;
-}
-</style>

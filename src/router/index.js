@@ -7,6 +7,7 @@ import ProductsIndex from "../views/ProductsIndex.vue";
 import ProductsNew from "../views/ProductsNew.vue";
 import ProductsShow from "../views/ProductsShow.vue";
 import ProductsEdit from "../views/ProductsEdit.vue";
+import CartedProducts from "../views/CartedProducts.vue";
 
 const routes = [
   {
@@ -29,6 +30,7 @@ const routes = [
   { path: "/products/new", name: "products-new", component: ProductsNew },
   { path: "/products/:id", name: "products-show", component: ProductsShow },
   { path: "/products/:id/edit", name: "products-edit", component: ProductsEdit },
+  { path: "/cartedProducts", name: "carted-products", component: CartedProducts },
 ];
 
 const router = createRouter({

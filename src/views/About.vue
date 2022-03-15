@@ -1,5 +1,361 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="container cta-100">
+    <div class="container">
+      <div class="row blog">
+        <div class="col-md-12">
+          <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#blogCarousel" data-slide-to="1"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item-box-blog">
+                      <div class="item-box-blog-image">
+                        <!--Date-->
+                        <div class="item-box-blog-date bg-blue-ui white"><span class="mon">Augu 01</span></div>
+                        <!--Image-->
+                        <figure>
+                          <img
+                            alt=""
+                            src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"
+                          />
+                        </figure>
+                      </div>
+                      <div class="item-box-blog-body">
+                        <!--Heading-->
+                        <div class="item-box-blog-heading">
+                          <a href="#" tabindex="0">
+                            <h5>News Title</h5>
+                          </a>
+                        </div>
+                        <!--Data-->
+                        <div class="item-box-blog-data" style="padding: px 15px">
+                          <p>
+                            <i class="fa fa-user-o"></i>
+                            Admin,
+                            <i class="fa fa-comments-o"></i>
+                            Comments(3)
+                          </p>
+                        </div>
+                        <!--Text-->
+                        <div class="item-box-blog-text">
+                          <p>
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum
+                            dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.
+                          </p>
+                        </div>
+                        <div class="mt"><a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a></div>
+                        <!--Read More Button-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="item-box-blog">
+                      <div class="item-box-blog-image">
+                        <!--Date-->
+                        <div class="item-box-blog-date bg-blue-ui white"><span class="mon">Augu 01</span></div>
+                        <!--Image-->
+                        <figure>
+                          <img
+                            alt=""
+                            src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"
+                          />
+                        </figure>
+                      </div>
+                      <div class="item-box-blog-body">
+                        <!--Heading-->
+                        <div class="item-box-blog-heading">
+                          <a href="#" tabindex="0">
+                            <h5>News Title</h5>
+                          </a>
+                        </div>
+                        <!--Data-->
+                        <div class="item-box-blog-data" style="padding: px 15px">
+                          <p>
+                            <i class="fa fa-user-o"></i>
+                            Admin,
+                            <i class="fa fa-comments-o"></i>
+                            Comments(3)
+                          </p>
+                        </div>
+                        <!--Text-->
+                        <div class="item-box-blog-text">
+                          <p>
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum
+                            dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.
+                          </p>
+                        </div>
+                        <div class="mt"><a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a></div>
+                        <!--Read More Button-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="item-box-blog">
+                      <div class="item-box-blog-image">
+                        <!--Date-->
+                        <div class="item-box-blog-date bg-blue-ui white"><span class="mon">Augu 01</span></div>
+                        <!--Image-->
+                        <figure>
+                          <img
+                            alt=""
+                            src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"
+                          />
+                        </figure>
+                      </div>
+                      <div class="item-box-blog-body">
+                        <!--Heading-->
+                        <div class="item-box-blog-heading">
+                          <a href="#" tabindex="0">
+                            <h5>News Title</h5>
+                          </a>
+                        </div>
+                        <!--Data-->
+                        <div class="item-box-blog-data" style="padding: px 15px">
+                          <p>
+                            <i class="fa fa-user-o"></i>
+                            Admin,
+                            <i class="fa fa-comments-o"></i>
+                            Comments(3)
+                          </p>
+                        </div>
+                        <!--Text-->
+                        <div class="item-box-blog-text">
+                          <p>
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum
+                            dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.
+                          </p>
+                        </div>
+                        <div class="mt"><a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a></div>
+                        <!--Read More Button-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--.row-->
+              </div>
+              <!--.item-->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item-box-blog">
+                      <div class="item-box-blog-image">
+                        <!--Date-->
+                        <div class="item-box-blog-date bg-blue-ui white"><span class="mon">Augu 01</span></div>
+                        <!--Image-->
+                        <figure>
+                          <img
+                            alt=""
+                            src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"
+                          />
+                        </figure>
+                      </div>
+                      <div class="item-box-blog-body">
+                        <!--Heading-->
+                        <div class="item-box-blog-heading">
+                          <a href="#" tabindex="0">
+                            <h5>News Title</h5>
+                          </a>
+                        </div>
+                        <!--Data-->
+                        <div class="item-box-blog-data" style="padding: px 15px">
+                          <p>
+                            <i class="fa fa-user-o"></i>
+                            Admin,
+                            <i class="fa fa-comments-o"></i>
+                            Comments(3)
+                          </p>
+                        </div>
+                        <!--Text-->
+                        <div class="item-box-blog-text">
+                          <p>
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum
+                            dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.
+                          </p>
+                        </div>
+                        <div class="mt"><a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a></div>
+                        <!--Read More Button-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="item-box-blog">
+                      <div class="item-box-blog-image">
+                        <!--Date-->
+                        <div class="item-box-blog-date bg-blue-ui white"><span class="mon">Augu 01</span></div>
+                        <!--Image-->
+                        <figure>
+                          <img
+                            alt=""
+                            src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"
+                          />
+                        </figure>
+                      </div>
+                      <div class="item-box-blog-body">
+                        <!--Heading-->
+                        <div class="item-box-blog-heading">
+                          <a href="#" tabindex="0">
+                            <h5>News Title</h5>
+                          </a>
+                        </div>
+                        <!--Data-->
+                        <div class="item-box-blog-data" style="padding: px 15px">
+                          <p>
+                            <i class="fa fa-user-o"></i>
+                            Admin,
+                            <i class="fa fa-comments-o"></i>
+                            Comments(3)
+                          </p>
+                        </div>
+                        <!--Text-->
+                        <div class="item-box-blog-text">
+                          <p>
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum
+                            dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.
+                          </p>
+                        </div>
+                        <div class="mt"><a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a></div>
+                        <!--Read More Button-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="item-box-blog">
+                      <div class="item-box-blog-image">
+                        <!--Date-->
+                        <div class="item-box-blog-date bg-blue-ui white"><span class="mon">Augu 01</span></div>
+                        <!--Image-->
+                        <figure>
+                          <img
+                            alt=""
+                            src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"
+                          />
+                        </figure>
+                      </div>
+                      <div class="item-box-blog-body">
+                        <!--Heading-->
+                        <div class="item-box-blog-heading">
+                          <a href="#" tabindex="0">
+                            <h5>News Title</h5>
+                          </a>
+                        </div>
+                        <!--Data-->
+                        <div class="item-box-blog-data" style="padding: px 15px">
+                          <p>
+                            <i class="fa fa-user-o"></i>
+                            Admin,
+                            <i class="fa fa-comments-o"></i>
+                            Comments(3)
+                          </p>
+                        </div>
+                        <!--Text-->
+                        <div class="item-box-blog-text">
+                          <p>
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.
+                            Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum
+                            dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.
+                          </p>
+                        </div>
+                        <div class="mt"><a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a></div>
+                        <!--Read More Button-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--.row-->
+              </div>
+              <!--.item-->
+            </div>
+            <!--.carousel-inner-->
+          </div>
+          <!--.Carousel-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+            <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-dark btn-sm">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 border-dark">
+          <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+            <a href="http://www.jquery2dotnet.com/" class="btn btn-dark btn-sm">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 text-white bg-dark">
+          <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+            <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<style>
+.cta-100 {
+  margin-top: 100px;
+  padding-left: 8%;
+  padding-top: 7%;
+}
+.col-md-4 {
+  padding-bottom: 20px;
+}
+
+.white {
+  color: #fff !important;
+}
+.mt {
+  float: left;
+  margin-top: -20px;
+  padding-top: 20px;
+}
+.bg-blue-ui {
+  background-color: #708198 !important;
+}
+figure img {
+  width: 300px;
+}
+
+#blogCarousel {
+  padding-bottom: 100px;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  top: -50px;
+  height: 50%;
+}
+</style>

@@ -38,6 +38,7 @@ export default {
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><router-link class="nav-link" to="/products">Vehicles</router-link></li>
             <li class="nav-item"><router-link class="nav-link" to="/products/new">New Vehicles</router-link></li>
+            <li class="nav-item"><router-link class="nav-link" to="/cartedProducts">Cart</router-link></li>
             <li class="nav-item">
               <router-link v-if="!isLoggedIn" class="nav-link" to="/signup">Signup</router-link>
             </li>
